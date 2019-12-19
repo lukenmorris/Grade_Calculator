@@ -1,0 +1,13 @@
+/* BACKGROUND IMAGE */
+#background {
+    background-image: url('../img/background.jpg');
+}
+
+#gradeTable, #finalTable {
+    text-align: center;
+    text-weight: bold;
+    color: ghostwhite;
+    position: relative;
+    margin: auto;
+    width: 42%;
+}
