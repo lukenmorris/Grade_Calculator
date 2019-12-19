@@ -1,6 +1,8 @@
 /* BACKGROUND IMAGE */
 #background {
     background-image: url('../img/background.jpg');
+    object-fit: cover;
+    background-size: 200% 200%;
 }
 
 #gradeTable, #finalTable {
@@ -10,4 +12,23 @@
     position: relative;
     margin: auto;
     width: 42%;
+}
+
+.centered-block {
+    position: relative;
+    margin: auto;
+    padding-top: 50px;
+    margin-top: 50px;
+}
+
+.box {
+    position:relative;
+}
+.bottomright {
+    font-style: italic;
+    position:absolute;
+    color: ghostwhite;
+    text-weight: bold;
+    bottom: -400px;
+    right: 20px;
 }
