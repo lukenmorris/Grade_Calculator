@@ -5,6 +5,8 @@
     <title>Grade Calculator</title>
     <!-- META TAGS -->
     <meta charset="utf-8">
+    <!-- JAVASCRIPT -->
+    <script src="js/main.js"></script>
     <!-- BOOTSTRAP -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
@@ -12,7 +14,8 @@
 <body id="background">
 <div class="centered-block">
 <div class="top top-fluid text-white text-center mb-0">
-    <img src="img/Title.png" class="img-fluid" alt="Responsive image" height="124.5" width="848.25">
+<div class="top top-fluid text-white text-center mb-0">
+    <img src="img/Title.png" class="img-fluid title-spacing" alt="Responsive image" height="124.5" width="848.25">
     <table class="table table-bordered table-hover" id="gradeTable" border=”1” cellspacing=”2” cellpadding=”5”>
         <thead>
         <tr>
@@ -23,30 +26,49 @@
         </thead>
         <tbody>
         <tr id="1">
-            <th scope="row">HOMEWORK</th>
-            <td><input id="hwScores" placeholder="Enter Scores" value="80,90,100"></td>
-            <td><input id="hwWeight" placeholder = "Enter Weight" value="20"></td>
+            <th scope="row">PARTICIPATION</th>
+            <td><input id="pScores" placeholder="Enter Scores" value="80,90,70"></td>
+            <td><input id="pWeight" placeholder="Enter Weight" value="5"></td>
         </tr>
 
         <tr id="2">
-            <th scope="row">QUIZZES</th>
-            <td><input id="qScores" placeholder="Enter Scores" value="30,50,70"></td>
-            <td><input id="qWeight" placeholder = "Enter Weight" value="25"></td>
+            <th scope="row">HOMEWORK</th>
+            <td><input id="hwScores" placeholder = "Enter Scores" value="80,90,100"></td>
+            <td><input id="hwWeight" placeholder = "Enter Weight" value="10"></td>
         </tr>
 
         <tr id="3">
+            <th scope="row">QUIZZES</th>
+            <td><input id="qScores" placeholder="Enter Scores" value="30,50,70"></td>
+            <td><input id="qWeight" placeholder="Enter Weight" value="20"></td>
+        </tr>
+
+        <tr id="4">
+            <th scope="row">PROJECTS</th>
+            <td><input id="projScores" placeholder="Enter Scores" value="80,90,70"></td>
+            <td><input id="projWeight" placeholder="Enter Weight" value="25"></td>
+        </tr>
+
+        <tr id="5">
             <th scope="row">TESTS</th>
             <td><input id="testScores" placeholder="Enter Scores" value="80,90,70"></td>
-            <td><input id="testWeight" placeholder="Enter Weight" value="40"></td>
+            <td><input id="testWeight" placeholder="Enter Weight" value="50"></td>
         </tr>
         </tbody>
     </table>
 </div>
 </div>
 
-<div class="box">
-    <p class="bottomright">By Luke Morris</p>
+<div class="text-center my-0 py-5">
+    <div id="currentGrade" class="currentGrade"></div>
+    <button onclick="calculateGrade()" class="btn btn-outline-light calculateGradeSpacing" role="button" data-toggle="button" aria-pressed="true">Calculate Final Grade</button>
+    <button onclick="resetfields()" class="btn btn-outline-light resetSpacing" role="button" data-toggle="button" aria-pressed="true">Reset Fields</button>
+    <div id="finalGradeNeeded" class="finalGradeNeeded"></div>
 </div>
 
+<div class="box">
+    <p class="bottomright">By Luke Morris</p>
+    <p class="bottomright2">Period 5</p>
+</div>
 </body>
 </html>

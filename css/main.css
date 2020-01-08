@@ -11,7 +11,12 @@
     color: ghostwhite;
     position: relative;
     margin: auto;
+    margin-top: 30px;
     width: 42%;
+}
+
+.title-spacing {
+    margin-top: 30px;
 }
 
 .centered-block {
@@ -21,14 +26,45 @@
     margin-top: 50px;
 }
 
+.finalGradeNeeded {
+    position: relative;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+    text-weight: bold;
+    color: ghostwhite;
+}
+
+.currentGrade {
+    font-size: 50px;
+    text-align: center;
+    text-weight: bold;
+    color: ghostwhite;
+    margin-top: -20px;
+}
+
 .box {
     position:relative;
 }
+
+.calculateGradeSpacing, .resetSpacing{
+    position:relative;
+    margin-top: 20px;
+}
+
 .bottomright {
     font-style: italic;
     position:absolute;
     color: ghostwhite;
     text-weight: bold;
-    bottom: -400px;
+    bottom: -100px;
+    right: 20px;
+}
+.bottomright2 {
+    font-style: italic;
+    position: absolute;
+    color: ghostwhite;
+    text-weight: bold;
+    bottom: -120px;
     right: 20px;
 }
