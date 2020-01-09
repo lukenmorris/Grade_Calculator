@@ -16,19 +16,10 @@ function calculateGrade(){
 
 
     var hwAvg = average(seperateNumber(hwScores));
-    console.log(hwAvg);
-
     var pAvg = average(seperateNumber(pScores));
-    console.log(pAvg);
-
     var qAvg = average(seperateNumber(qScores));
-    console.log(qAvg);
-
     var testAvg = average(seperateNumber(testScores));
-    console.log(testAvg);
-
     var projAvg = average(seperateNumber(projScores));
-    console.log(projAvg);
 
     parseInt(hwWeight);
 
@@ -58,9 +49,7 @@ function gradeNeeded(){
 
     var finalWeight = [];
 
-    var current= calculateGrade();
-
-    var finalGrade = current;
+    var finalGrade = calculateGrade();
 
     gradeDesired.push(document.getElementById("gradeDesired").value);
     finalWeight.push(document.getElementById("finalWeight").value);
@@ -101,10 +90,6 @@ function average(arr){
         sum = sum + arr[i];
     }
     return sum/(arr.length);
-}
-
-function findWeight(){
-
 }
 
 function resetfields(){
