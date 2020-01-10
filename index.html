@@ -14,7 +14,6 @@
 <body id="background">
 <div class="centered-block">
 <div class="top top-fluid text-white text-center mb-0">
-<div class="top top-fluid text-white text-center mb-0">
     <img src="img/Title.png" class="img-fluid title-spacing" alt="Responsive image" height="124.5" width="848.25">
     <table class="table table-bordered table-hover" id="gradeTable" border=”1” cellspacing=”2” cellpadding=”5”>
         <thead>
@@ -27,7 +26,7 @@
         <tbody>
         <tr id="1">
             <th scope="row">PARTICIPATION</th>
-            <td><input id="pScores" placeholder="Enter Scores" value="80,90,70"></td>
+            <td><input id="pScores" placeholder="Enter Scores" value="80,90,70" onkeypress="runCheck(this.value)"></td>
             <td><input id="pWeight" placeholder="Enter Weight" value="5"></td>
         </tr>
 

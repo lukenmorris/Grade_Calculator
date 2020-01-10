@@ -44,6 +44,8 @@ function calculateGrade(){
     return currentGrade;
 }
 
+
+
 function gradeNeeded(){
     var gradeDesired = [];
 
@@ -100,4 +102,9 @@ function resetfields(){
     document.getElementById(1).style.backgroundColor = "#cfdefb";
     document.getElementById(2).style.backgroundColor = "#cfdefb";
     document.getElementById(3).style.backgroundColor = "#cfdefb";
+}
+
+function runCheck(value) {
+    console.log(value);
+
 }
