@@ -55,6 +55,22 @@
         </tr>
         </tbody>
     </table>
+    <table class="table table-bordered table-hover" id="gradeTable" border=”1” cellspacing=”2” cellpadding=”5”>
+        <thead>
+        <tr>
+            <th scope="col">Category</th>
+            <th scope="col">Grade Wanted</th>
+            <th scope="col">Weight of Final(%)</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr id="6">
+            <th scope="row">Final Grade Calculator</th>
+            <td><input id="gradewanted" placeholder="Enter Scores" value="90" onkeypress="runCheck(this.value)"></td>
+            <td><input id="finalWeight" placeholder="Enter Weight" value="15"></td>
+        </tr>
+        </tbody>
+    </table>
 </div>
 </div>
 
@@ -62,7 +78,6 @@
     <div id="currentGrade" class="currentGrade"></div>
     <button onclick="calculateGrade()" class="btn btn-outline-light calculateGradeSpacing" role="button" data-toggle="button" aria-pressed="true">Calculate Final Grade</button>
     <button onclick="resetfields()" class="btn btn-outline-light resetSpacing" role="button" data-toggle="button" aria-pressed="true">Reset Fields</button>
-    <div id="finalGradeNeeded" class="finalGradeNeeded"></div>
 </div>
 
 <div class="box">
